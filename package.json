@@ -1,0 +1,23 @@
+{
+  "name": "web-development-fall-2018",
+  "version": "1.0.0",
+  "description": "__ICOM-101-01 / MTEC-617-01__    Wednesday : 2:00pm - 3:50pm : Main Building B214A ( Machine Lab )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo --dir . --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DexterShepherd/Media-and-Web-development---Fall-2018-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DexterShepherd/Media-and-Web-development---Fall-2018-/issues"
+  },
+  "homepage": "https://github.com/DexterShepherd/Media-and-Web-development---Fall-2018-#readme",
+  "dependencies": {
+    "budo": "^11.3.2"
+  }
+}
