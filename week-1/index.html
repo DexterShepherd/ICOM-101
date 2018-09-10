@@ -4,20 +4,155 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="../lib/reveal.css">
-  <link rel="stylesheet" href="../lib/theme/black.css">
+  <link rel="stylesheet" href="../lib/theme/simple.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="reveal">
+  <div id='week-1' class="reveal">
     <div class="slides">
       <section>
-        Boilerplate code
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>ICOM-101-01 / MTEC-617-01</em></p>
       </section>
+      <section>
+        <h3>Dexter Shepherd</h3>
+        <a href="mailto:dextershepherd@calarts.edu">dextershepherd@calarts.edu</a>
+        <p><em>Artist focused on web technologies</em></p>
+        <p><em>Web developer @ Kadenze</em></p>
+        <p>Office Hours - by appointment</p>
+      </section>
+      <section class='left-align'>
+        <h3>Course Resources</h3>
+        <div>
+          <a href="fixme">Syllabus</a>
+        </div>
+        <div>
+          <a href="fixme">Slides</a>
+        </div>
+        <div>
+          <a href="fixme">Learn</a>
+        </div>
+      </section>
+      <section>
+        <section class='left-align'>
+          <h3>What are we building?</h3>
+          <a href="http://www.mattdesl.com" target="_blank">
+            <img class='image' src="assets/mattdesl.png" alt="">
+          </a>
+          <a href="http://www.ericheep.com" target='_blank'>
+            <img class='image' src="assets/ericheep.png" alt="">
+          </a>
+        </section>
+        <section class='left-align'>
+          <h5 class='underline'>Simple Static Sites</h5>
+          <p>Sites that act as a hub for content, but don't always host the content themselves.</p>
+          <p>
+            We are less interested in building fully featured, rich media browsing portfolios, and more concerned with creating useful directories linking to content around the web.
+          </p>
+        </section>
+      </section>
+      <section>
+        <h1>Web Fundamentals!</h1>
+      </section>
+
+      <section>
+        <section>
+          <h2>Visiting a website</h2>
+        </section>
+        <section>
+          <h4>You type an address into the browser and hit ENTER.</h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/female-technologist_1f469-200d-1f4bb.png" alt="">
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/male-technologist_1f468-200d-1f4bb.png" alt="">
+        
+        </section>
+        <section>
+          <h4>Your ISP makes a request to a Domain Name Server ( DNS )</h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/open-book_1f4d6.png" alt="">
+          <div class='left-align'>
+            <p>Visiting a website is a lot like calling someone on the phone. Every website on the internet has a unique <strong>IP Address</strong>, like a phone number, that points to the server where that website is being hosted.</p>
+            <p>The <strong>DNS</strong> acts like your address book and maps website names to website addresses.</p>
+            <hr>
+            <p>If you know the IP address of a website, you can bypass the DNS completely.</p>
+          </div>
+        </section>
+        <section>
+          <h4>The DNS <strong>resolves</strong> your request.</h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/right-pointing-magnifying-glass_1f50e.png" alt="">
+          <p>The DNS looks up the domain name you have requested, and returns the IP address of that website to your ISP</p>
+        </section>
+        <section>
+          <h4>Your ISP forwards your request to the IP address returned from the DNS</h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/black-rightwards-arrow_27a1.png" alt="">
+        </section>
+        <section>
+          <h4>The website you have requested receives your request</h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/open-hands-sign_1f450.png" alt="">
+          <div class="left-align">
+            <p>Once a web server recieves a request, it is expected to generate a response.</p>
+            <hr>
+            <ul>
+              <li><p>A server at Twitter might dynamically generate your custom homepage and return that as the response.</p></li>
+              <li><p>An API endpoint might calculate some data and return it in a machine readable format.</p></li>
+              <li><p>A server hosting a static site may just return a prewritten chunk of html ( this is what we are doing! ).</p></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h4>Your ISP returns the response to <strong>YOU</strong></h4>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/female-technologist_1f469-200d-1f4bb.png" alt="">
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/male-technologist_1f468-200d-1f4bb.png" alt="">
+          <hr>
+          <p>The response might be a webpage, a media asset, or some data for the webpage to render.</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Some key terms...</h1>
+        </section>
+        <section>
+          <h3>Server</h3>
+          <img src="https://raymondc.net/assets/img/nocloud.png" alt="">
+          <p>A server is the computer that hosts your website. Servers make the internet work, but in this class we will avoid dealing with them directly wherever possible.</p>
+        </section>
+        <section>
+          <h3>Client</h3>
+          <p>The client refers to the computer that is visiting your website ( the opposite of the server ). All the code we write will be executed on the client.</p>
+        </section>
+        <section>
+          <h3>Front end / Back end ( server side / client side )</h3>
+          <p> The front end and back end refer to the client and server side respectively.  </p>
+          <p> ex: "HTML is a <em>front end</em> language"</p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h3>Everyone is welcome in this class, we all belong here.</h3>
+        </section>
+        <section>
+          <h3>Coding is not reserved for a particular type person.</h3>
+        </section>
+        <section>
+          <h3>No one is <em>other</em> here.</h3>
+        </section>
+
+        <section>
+          <p>If I, or anyone else, makes you feel like don't belong, please let me know.</p>
+          <p>You can use a service like <a href="http://www.sendanonymousemail.net/" target="_blank">this</a> to send an email annonymously if you wish.</p>
+        </section>
+      </section>
+
     </div>
   </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+
   <script>
-    Reveal.initialize();
   </script>
 </body>
 </html>
