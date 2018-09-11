@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo --dir . --live"
+    "start": "budo --dir . --live",
+    "render": "markdown-pdf syllabus.md"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/DexterShepherd/Media-and-Web-development---Fall-2018-#readme",
   "dependencies": {
-    "budo": "^11.3.2"
+    "budo": "^11.3.2",
+    "markdown-pdf": "^9.0.0"
   }
 }

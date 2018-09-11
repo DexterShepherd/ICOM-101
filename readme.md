@@ -1,10 +1,11 @@
 # Media and Web Development - Fall 2018
 __ICOM-101-01 / MTEC-617-01__   
-Wednesday : 2:00pm - 3:50pm : Main Building B214A ( Machine Lab )
+Wednesday : 2:00pm - 3:50pm : Main Building B214A ( Machine Lab )  
+Course Credit: 2.0
 
 Instructor: Dexter Shepherd  
 Office hours: By appointment  
-Email: dshepherd@calarts.edu  
+Email: dextershepherd@calarts.edu  
 TA Time: M/T/F : 6pm - 8pm : Machine Lab  
 
 
@@ -14,21 +15,23 @@ This course provides an introduction to practical web development for artists.
 Each student will learn the basics of HTML and CSS, and how to combine them into
 a functioning portfolio website. Students will learn how to work with rich media
 sources, create dynamic animations, and deploy content to the web using free and open
-source tools. The final project in this course is to have a personal website set
-up and running.
+source tools. The final project in this course is to have a personal website up and running.
 
+### Student Learning Outcomes
+- Students will learn the tools and technologies behind modern front end web development.
+- Students will gain the skills needed to represent themselves and their practice through the web.
 
 ### Materials
 - Equipment
   - A computer with internet access
 - Software  
   _we will install these together as the course progresses_
-  - A programming focused text editor of your choice ( I recomend VSCode, Atom, or Sublime Text )
+  - A programming focused text editor of your choice ( I recommend VSCode, Atom, or Sublime Text )
   - A modern web browser ( Google Chrome, Firefox, Safari, Microsoft Edge )
   - Node.js
 
 ### Expected expenses
-Purchasing a domain name to use as your website url is an optional, but strongly encouraged part of this course.
+Purchasing a domain name to use as your website URL is an optional, but strongly encouraged part of this course.
 Domain name costs vary depending on TLD ( .com, .me, .party, etc ) and some other factors, but most personal
 website domains come in at under $10 per year.
 
@@ -42,7 +45,7 @@ _Schedule is subject to change at any time_
 - Fill out course info cards
 
 #### Week 2 - 9/19
-- Introductin to HTML
+- Introduction to HTML
   - Elements and Tags and attributes
     - Typography
       - `h1` - `h6`
@@ -54,13 +57,13 @@ _Schedule is subject to change at any time_
     - links and images
       - `a` and `href`
       - `img`
-  - Using Codepen
+  - Using codepen
   - Making structured text documents
 
 __Homework__  
 - Make an account on codepen
 - Design and code a "document" with html on codepen
-  - Think about creating a Resume or CV, a simple flyer for an event, liner notes for an album, or credits for a film. Go as far and be as creative as you like.
+  - Think about creating a Resume or CV, a simple flier for an event, liner notes for an album, or credits for a film. Go as far and be as creative as you like.
   - Make sure to use different heading levels with `h1` through `h6` tags ( at least 2 different heading levels )
   - use the `p` tag to format text into paragraphs
   - divide your content into sections with `div`, `section`, or `article` tags
@@ -77,7 +80,7 @@ __Homework__
   - Color
     - Web colors
     - Hex codes
-    - rgba()
+    - `rgba()`
   - Font
     - System
     - Web fonts
@@ -87,12 +90,12 @@ __Homework__
 
 __Homework__
 - Fork your assignment from last week ( or start a new project if you like )
-- Add some CSS to style your html
+- Add some CSS to style your HTML
   - Use the CSS Box model to add `padding`, `margin`, or `border` styles to an element
   - Change the `color` or `background-color` of an element
   - Change the font of an element from the default
     - Extra credit : Load a font from google fonts
-  - Use at least one `class` attribute to selectively style some html
+  - Use at least one `class` attribute to selectively style some HTML
 - If you didn't last week, add an `img` and `a` tag to your document
 
 #### Week 4 - 10/3
@@ -120,7 +123,7 @@ Not all techniques will be relevant to all projects, try to use at least 2 of th
 
 - Use `flex` or `grid` in your layout
 - Use a css gradient, or the `background-image` to add detail
-- Use a psuedo-selector to add conditional styling to some part of your site
+- Use a pseudo-selector to add conditional styling to some part of your site
 - Use a CSS transition to animate an element on `:hover`
 - Add a CSS animation to your site
 
@@ -145,7 +148,7 @@ __Homework__
 
 #### Week 6 - 10/17
 - Quiz
-  - 5% of grade for the course
+  - Does not count towards your course grade 
   - Progress check for everyone so we can revisit problem areas
 - Deployment
   - Github Pages
@@ -177,7 +180,7 @@ Work on your final site. If you want to expand on your previous assignments, GO 
 #### Week 8 - 10/31
 - Basic Javascript
   - Selecting elements with jquery
-  - listening for events ( click, hover, keypress )
+  - listening for events ( click, hover, key press )
   - animation ( jquery or anime.js )
 
 __Homework__
@@ -206,3 +209,32 @@ Continue working on your final site.
 #### Week 12 - 12/5
 - Present final projects
 
+
+### Course Policies
+All coursework in this course will be graded individually, with a focus on the students progression and growth.   
+Technical assignments will have clearly marked grading criteria. Each of which must be completed to receive full credit. Where possible, assignments will include extra credit criteria to encourage experimentation and risk taking.  
+The final project, and the work weeks associated with it, will be graded in the context of the course at large, and the students personal goals. 
+
+__Final grades will be based on the following breakdown__
+- Attendance: 25% - 3 absences will yield an NX grade for the course.
+- Assignments: 50%
+- Final Project: 25%
+
+#### Units
+- Undergraduate students should be committing a total of 6 hours per week, including lectures.
+- Graduate students should be committing a total of 8 hours per week, including lectures.
+- Time spent outside of class constitutes researching, planning, and executing assignments
+
+#### In-Class Behavior
+Inappropriate, aggressive, or offensive behavior or language, or provocation of conflict will not be tolerated in this class.  
+If something about the class is making you uncomfortable, please contact your instructor immediately.
+
+### Institute Policies
+
+__Plagiarism__: Plagiarism is the use of ideas and/or quotations (from the Internet, books, films, television, newspapers, articles, the work of other students, works of art, media, etc.) without proper credit to the author/artist. While the argument in a paper can be enhanced by research, students are cautioned to delineate clearly their own original ideas from source material. Students should introduce source material (either quoted or paraphrased); note when the source material ends; and provide citations for source materials using standard documentation formats.
+
+According to CalArts policy, students who misrepresent source material as their own original work and fail to credit it have committed plagiarism and are subject to disciplinary action, as determined by the faculty member, the dean of the student’s school and the Office of the Provost. If you have questions regarding plagiarism or would like direction on how to credit source material, there are reference guides on permanent reserve in the CalArts library. Please contact one of the CalArts reference librarians for more information.
+
+_These ideas are just as viable in the world of computer programming. If you use code written by someone else, you must provide attribution by including an authors name and/or url in your code comments!_
+
+__Students with Disabilities__: Students who have documented disabilities and who want to request accommodations should first go to the Student Affairs office in A207. The Office of Student Affairs will meet with students and communicate with their faculty about appropriate classroom accommodations. Students are encouraged to use these procedures early in the semester, so that the proper arrangements can be in place throughout the course.
