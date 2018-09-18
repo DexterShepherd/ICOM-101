@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../lib/reveal.css">
+  <link rel="stylesheet" href="../lib/theme/simple.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='week-1' class="reveal">
+    <div class="slides">
+      <section>
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>Week 2 - Introduction to HTML</em></p>
+      </section>
+      <section>
+        <h2>Agenda</h2>
+        <h5>An Introduction to HTML</h5>
+        <ul>
+          <li>Elements and Tags</li>
+          <li>Layout</li>
+          <li>The CodePen Environment</li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h1>Elements</h1>
+        </section>
+        <section>
+          <h3>Elements</h3>
+          <p>
+            An element is the atomic unit of HTML.
+          </p>
+        </section>
+        <section>
+          <p>
+            All web pages are made up of elements.
+          </p>
+        </section>
+        <section>
+          <img src="./assets/elements.png">
+        </section>
+        <section>
+          <p>That was an image element</p>
+        </section>
+        <section>
+          <p>And that was a paragraph element</p>
+        </section>
+        <section>
+          <p>There are many elements in HTML, some are redundant, and some are outside the scope of this course.</p>
+          <p><em>These are some of the really important ones.</em></p>
+        </section>
+        <section>
+          <ul class='no-list-style'>
+            <li>Heading - Titles & subtitles in 6 different levels </li>
+            <li>Paragraph - The basic unit of text</li>
+            <li>Anchor - A link to another page</li>
+            <li>Image - Renders an image</li>
+            <li>Div - Defines a section of block content</li>
+            <li>Span - Defines a section of inline content</li>
+            <li>Emphasis - specifies <em>emphasized</em> text ( usually italic )</li>
+            <li>Strong - specifies <strong>strong</strong> text ( usually bold )</li>
+            <li>Lists and List elements - Define different types of lists</li>
+          </ul>
+        </section>
+        <section>
+          <p>With these building blocks, we can build almost anything on the web.</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Elements and Tags in Code</h3>
+        </section>
+        <section>
+            <p>We define <em>elements</em> in our code with <strong>tags</strong></p>
+        </section>
+        <section>
+          <p>An element consists of an opening tag, some content, and a closing tag.</p>
+          <textarea rows="3" disabled >
+            <p>Some Text</p>
+          </textarea>
+          <p>This tag defines a paragraph element.</p>
+        </section>
+        <section>
+          <p>The <em>opening</em> tag is the tag name inside of angle brackets.</p>
+          <textarea rows="10" disabled >
+            <p>Some Content</p>
+            ___
+             ^
+             |
+           opening tag 
+          </textarea>
+        </section>
+        <section>
+          <p>Followed by the content, between the opening and closing tags.</p>
+          <textarea rows="10" disabled >
+            <p>Some Content</p>
+               ___________
+                    ^
+                    |
+              The content
+          </textarea>
+        </section>
+        <section>
+          <p>And then <em>closing</em> tag - the tag name, preceeded by a slash, inside angle brackets.</p>
+          <textarea rows="10" disabled >
+            <p>Some Content</p>
+                            ___        
+                             ^
+                             |
+                        Closing tag 
+          </textarea>
+        </section>
+        <section>
+          <p>HTML has a tree strucure. This means you can embed tags within other tags to form more complex structures.</p>
+        </section>
+        <section>
+          <textarea rows="10" disabled >
+            <div>
+              <h1>A header</h1>
+              <p>Some Content</p>
+              <p>
+                <em>
+                  Something
+                  Emphasized
+                </em>
+              </p>
+            </div>
+          </textarea>
+        </section>
+        <section>
+          <p>The opening tag can also contain <em>attributes</em> which add additional data to the element.</p>
+          <p>We'll work more with attributes next week, but for now we'll only need them when woking with images and links.</p>
+        </section>
+        <section>
+          <p> An anchor tag that links to google.com</p>
+          <textarea rows="10" disabled class='smaller-text-area'>
+            <a href='https://www.google.com'>link!</a>
+               ____  _______________________                
+                ^                  ^ 
+                |                  | 
+          Attribute name     Attribute Value 
+          </textarea>
+          <a href="https://www.google.com">link!</a>
+        </section>
+        <section>
+          <p>
+          The <code>href</code> (<em>hypertext reference</em>) attribute tells the link where to link to.
+          </p>
+        </section>
+        <section>
+          <p>An image tag that loads <code>cat.jpg</code></p>
+          <textarea rows="10" disabled>
+            <img src='cat.jpg'>
+                 ___ ________                               
+                  ^      ^ 
+                  |      | 
+                name   value 
+          </textarea>
+        </section>
+        <section>
+          <div class="half-width">
+            <img src="./assets/cat.jpg" alt="">
+          </div>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Inline vs Block elements</h3>
+        </section>
+        <section>
+          <p>Broadly speaking, each HTML element has 1 of 2 layout patterns.</p>
+        </section>
+        <section>
+          <p>Inline elements which do not create a new line on the page.</p>
+          <hr>
+          
+          <p>Block elements which exist on their own lines.</p>
+        </section>
+        <section>
+          <p>Some common inline elements are</p>
+          <ul>
+            <li>span</li>
+            <li>img</li>
+            <li>a</li>
+          </ul>
+        </section>
+        <section>
+          <p>Some common block elements are</p>
+          <ul>
+            <li>div</li>
+            <li>p</li>
+            <li>heading</li>
+            <li>Most other elements</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <p>This stuff can be hard to understand in the abstract, so let's jump to codepen.</p>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+  </script>
+</body>
+</html>
