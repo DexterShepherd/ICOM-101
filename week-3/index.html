@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../lib/reveal.css">
+  <link rel="stylesheet" href="../lib/theme/white.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='week-1' class="reveal">
+    <div class="slides">
+      <section>
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>Week 3 - Introduction to CSS</em></p>
+      </section>
+      <section>
+        <h2>Agenda</h2>
+        <ul>
+          <li>What is CSS?</li>
+          <li>Selectors</li>
+          <li>Color</li>
+          <li>Font</li>
+          <li>Layout</li>
+        </ul>
+      </section>
+      <section>
+        <section>
+          <p class='left-align'>CSS is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</p>
+          <cite><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">wikipedia</a></cite>
+        </section>
+        <section>
+          <h3>CSS makes the web look like it does!</h3>
+        </section>
+        <section>
+          <div class="flex">
+            <img src="assets/apple-with-style.png" alt="">
+            <img src="assets/apple-without-style.png" alt="">
+          </div>
+        </section>
+        <section>
+          <h3>Cascading Style Sheets</h3>
+        </section>
+        <section>
+          <h3>Cascading because styles flow over many elements.</h3>
+          <img class='emoji' src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/water-wave_1f30a.png" alt="">
+          <p>When many styles are applied to the same element, they use a <em>cascading priotiry scheme.</em></p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>CSS Rules</h3>
+          <p>The 2000 key/value pairs that make websites look nice.</p>
+        </section>
+
+        <section>
+          <p>A css rules are key/value pairs (like HTML attributes).</p>
+          <p><code>color: red;</code></p>
+          <p><code>font-size: 24px;</code></p>
+          <p><code>padding-left: 8px;</code></p>
+          <p><code>text-align: center;</code></p>
+        </section>
+        <section>
+          <p>
+          A rule starts with the <span class='key'>key</span>, followed be a <span class='colon'>colon</span>, then the <span class='value'>value</span>, ended with a <span class='semi-colon'>semi-colon</span>.</p>
+          <p><code><span class='key'>color</span><span class='colon'>:</span> <span class='value'>red</span><span class='semi-colon'>;</span></code></p>
+        </section>
+        <section>
+          <p>There are thousands of css rules.</p>
+          <p>
+            We'll learn some together as we go, you'll learn some on your own as you research specific functionality, and the rest you can find on <a href="https://www.w3schools.com/Css/" target='_blank'>w3schools css reference</a>.
+          </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>CSS Selectors</h3>
+        </section>
+        <section>
+          <p>Selectors allow us to choose which elements our css rules are applied to.</p>
+        </section>
+        <section>
+          <p>We can select by tag name.</p>
+          <img class='carbon' src="assets/selectors-1.png" alt="">
+          <p>Apply the <code>color: blue</code> rule to all p tags</p>
+        </section>
+        <section>
+          <img class='codepen' src="assets/selectors-1-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/KxjPqd?editors=1100">pen</a></cite>
+        </section>
+        <section>
+          <p>We can select child tags based on their parents.</p>
+          <img class='carbon' src="assets/selectors-2.png" alt="">
+          <p>Apply an underline style to all p tags that are children of a div tag.</p>
+          <p>This is a <em>general</em> descendent selector.</p>
+        </section>
+        <section>
+          <img class='codepen' src="assets/selectors-2-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/jvjNab">pen</a></cite>
+        </section>
+        <section>
+          <p>In addition to general descendent selector, we can select direct descendents, or siblings.</p>
+          <img class='carbon' src="assets/selectors-3.png" alt="">
+        </section>
+        <section>
+          <img class="codepen" src="assets/selectors-3-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/xaoxZy?editors=1100">Pen</a></cite>
+        </section>
+        <section>
+          <p>We can select arbitrary elements with <strong>id</strong> and <strong>class</strong> attributes.</p>
+          <img class='carbon' src="assets/class-and-id.png" alt="">
+        </section>
+        <section>
+          <p>Classes and IDs are html attributes, just like <code>href</code> and <code>src</code> from last week.</p>
+          <img class='carbon' src="assets/class-and-id.png" alt="">
+        </section>
+        <section>
+          <p>Each element may only have one ID, and an ID can only be applied to one element.</p>
+          <img class='carbon' src="assets/ids.png" alt="">
+        </section>
+        <section>
+          <p>Classes can be applied to multiple elements, and an element may have many classes.</p>
+
+          <img class='carbon' src="assets/classes.png" alt="">
+        </section>
+        <section>
+          <p>Class and ID names can mostly be whatever you want, but must always start with an <code>a-z</code> character.</p>
+        </section>
+        <section>
+          <p>We can select by class in our css with a dot (.) followed by the class name.</p>
+          <img class='carbon' src="assets/classes-css.png" alt="">
+        </section>
+        <section>
+          <p>And we can select by id with the hash symbol (#) followed by the id name.</p>
+          <img class='carbon' src="assets/ids-css.png" alt="">
+        </section>
+        <section>
+          <img class='codepen' src="assets/class-and-id-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/QVXwNB?editors=1100">Pen</a></cite>
+        </section>
+        <section>
+          <p>Classes and IDs are confusing at first. <a href="https://css-tricks.com/the-difference-between-id-and-class/">This</a> article on css tricks gives a good overview of the difference between the two.</p>
+        </section>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+  </script>
+</body>
+</html>

@@ -53,12 +53,12 @@ _Schedule is subject to change at any time_
       - `em` and `strong`
     - Layout
       - `div`
+      - `span`
       - `section`, `article`, `figure`, `nav`
-    - links and images
+    - Attrubutes with links and images
       - `a` and `href`
-      - `img`
+      - `img` and `src`
   - Using codepen
-  - Making structured text documents
 
 __Homework__  
 - Make an account on codepen
