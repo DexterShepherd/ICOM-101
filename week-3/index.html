@@ -143,6 +143,136 @@
           <p>Classes and IDs are confusing at first. <a href="https://css-tricks.com/the-difference-between-id-and-class/">This</a> article on css tricks gives a good overview of the difference between the two.</p>
         </section>
       </section>
+      <section>
+        <section class='colors' data-background-image="assets/gradient.png">
+          <h1>Web Colors!</h1>
+        </section>
+        <section data-background-color='red'>
+          <img class="carbon" src="assets/color-1.png" alt="">
+          <p class="fragment white">The easiest way to define colors is using one of the 140 <em><a href="https://htmlcolorcodes.com/color-names/" target="_blank">named colors</a></em> supported by modern browsers.</p>
+        </section>
+        <section>
+          <img class='codepen' src="assets/colors-1-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/xaoejG?editors=1100">pen</a></cite>
+        </section>
+        <section data-background-color='rgba(52, 152, 219, 1.0)'>
+          <img class="carbon" src="assets/color-2.png"></img>
+          <p class="fragment white">We can also define colors with the rgba function. Values between 0 and 255 for Red/Green/Blue, and 0.0 to 1.0 for alpha (opacity).</p>
+        </section>
+        <section data-background-color='#FF8F00'>
+          <img class="carbon" src="assets/color-3.png"></img>
+          <p class="fragment white">Most commonly, colors are defined with hex codes. This is similar to the RGB notation, but instead of decimal 0 - 255, we use hexadecimal 0 - FF.</p>
+        </section>
+        <section data-background-color='#28B463'>
+          <p class='white'>At then end of the day, the browser doesn't care which of these color formats you use. You should have familiarity with all them, but use whatever you feel most comfortable with.</p> 
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Web Fonts</h1>
+        </section>
+        <section>
+          <p>Fonts on the web can be quite complicated.</p>
+        </section>
+        <section>
+          <p>We'll look at some of the most common approches, type nerds might want to look at <a href="https://css-tricks.com/understanding-web-fonts-getting/" target="_blank">this</a> article to get into the nitty gritty.</p>
+        </section>
+        <section>
+          <p>The font-family property and generic fonts.</p>
+          <img class="carbon" src="assets/font-1.png">
+        </section>
+        <section>
+          <p>The <code>font-family</code> css property can be used to set the font used when rendering text. When you pass a font name to <code>font-family</code> that font will be looked up on the users computer.</p>
+          <p>The browser provides 3 generic fonts <code>serif/sans-serif/monospace</code> to use as fallbacks when the desired font isn't available.</p>
+        </section>
+        <section>
+          <img class="codepen" src="assets/font-demo-1.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/xaoooe?editors=1100">pen</a></cite>
+        </section>
+        <section>
+          <p>For lists of commonly installed fonts and font stacks see <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target='_blank'>w3schools websafe fonts</a> and <a href="https://www.cssfontstack.com/" target="_blank">cssfontstack.com</a></p>
+        </section>
+        <section>
+          <h3>Google Fonts</h3>
+          <a href="https://fonts.google.com/" target="_blank"><img src="assets/google-fonts.png" alt=""></a>
+        </section>
+        <section>
+          <p>Whenever I start a project and want to think about typography google fonts is the first place I go.</p>
+        </section>
+        <section>
+          <img class='carbon' src="assets/google-fonts-1.png" alt="">
+        </section>
+        <section>
+          <p>In codepen, we need to use the <code>@import</code> syntax to import fonts directly in our css.</p>
+          <img class='codepen' src="assets/google-fonts-2.png" alt="">
+        </section>
+        <section>
+          <p>Once the font is imported, we can use it with the <code>font-family</code> rule as before.</p>
+          <img class='codepen' src="assets/google-fonts-3.png" alt="">
+        </section>
+        <section>
+          <img class="codepen" src="assets/google-fonts-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/wEVwGQ?editors=1100">pen</a></cite>
+        </section>
+        <section>
+          <h3>Font Size and units</h3>
+          <img class='carbon' src="assets/font-size-1.png" alt="">
+        </section>
+        <section>
+          <p>The <code>font-size</code> property lets us set the size of our rendered text.</p>
+          <p>You can declare the size in <code>px</code>, <code>em</code>, or <code>vw</code>.</p>
+        </section>
+        <section>
+          <p>Pixels is a exact unit, setting a font-size in pixels guarentees it will be the same size for all users.</p>
+          <p>Em is similar to pixels, but accounts for the users global font-size setting. By default, 1em = 16px.</p>
+          <p>Vw stands for viewport width. You can use this unit to make text resize with the browser window. This is useful for large hero text.</p>
+        </section>
+        <section>
+          <img class="codepen" src="assets/font-size-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/eLqOVz?editors=1100">pen</a></cite>
+        </section>
+        <section>
+          <p>You can read about more css font rules at w3schools <a href="https://www.w3schools.com/css/css_font.asp" target="_blank">CSS Fonts</a> page</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Layout / CSS Box Model</h1>
+        </section>
+        <section>
+          <p class='spaced'>Every element on a webpage lives in its own little box.</p>
+          <div class="content">
+            <p><em>Content</em></p>
+          </div>
+          <p>At the center of the box is the elements content.</p>
+        </section>
+        <section>
+          <p class='spaced'>That box has a <span class='red'>border</span> that we can style however we like.</p>
+          <div class="content">
+            <p class='border'><em>Content</em></p>
+          </div>
+        </section>
+        <section>
+          <p class='spaced'>The distance between the content and the border is known as the <span class='aqua'>padding</span>.</p>
+          <div class="content">
+            <p class='padding'><em>Content</em></p>
+            <p class='padding small'><em>Content</em></p>
+            <p class='padding med'><em>Content</em></p>
+          </div>
+        </section>
+        <section>
+          <p class='spaced'>The distance between the a box and its neighbor is known as its <em>margin</em>.</p>
+          <div class="content">
+            <p class='margin'><em>Content</em></p>
+            <p class='margin'><em>Content</em></p>
+            <p class='margin small'><em>Content</em></p>
+          </div>
+        </section>
+        <section>
+          <img class="codepen" src="assets/box-model-1-demo.png" alt="">
+          <cite><a href="https://codepen.io/DexterShepherd/pen/vzoNLP?editors=1100">pen</a></cite>
+        </section>
+      </section>
     </div>
   </div>
 
