@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../lib/reveal.css">
+  <link rel="stylesheet" href="../lib/theme/white.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='week-1' class="reveal">
+    <div class="slides">
+      <section>
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>Week 4 - Advanced CSS</em></p>
+      </section>
+      <section>
+        <h2>Agenda</h2>
+        <ul>
+          <li>Quick Review and Housekeeping</li>
+          <li>Positioning and Layout cont.</li>
+          <li>Background Images and Effects</li>
+          <li>Embedded content</li>
+          <li>Psuedo-selectors</li>
+          <!-- <li>Transitions/Animation</li> -->
+        </ul>
+      </section>
+      <section>
+        <section>
+          <h3>Closing Tags and Quoted Attributes</h3>
+          <img class="carbon" src="assets/tags.png" alt="">
+        </section>
+        <section>
+          <h3>Tag Structure</h3>
+          <img class="carbon" src="assets/structure.png" alt="">
+        </section>
+        <section>
+          <h3>Inline Styles</h3>
+          <img class="carbon" src="assets/inline-style.png" alt="">
+        </section>
+        <section>
+          <h3>Image Sources</h3>
+          <img class="carbon" src="assets/image-src.png" alt="">
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>More positioning and layout</h3>
+        </section>
+        <section>
+          <h3>Flex Box</h3>
+          <p>
+            Flex box lets us position elements within a container with greater control than
+            we had with just the box model + floats.
+          </p>
+        </section>
+        <section>
+          <p>For flex to work, we need a container element with <code>display: flex</code> css rule applied.</p>
+          <p>Any child elements of the flex container will be positioned with the flex rules of the container.</p>
+        </section>
+        <section>
+          <h4>Justify Content</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/OBMpVE?editors=0100" target="_blank">
+            <img class="codepen" src="assets/justify-content.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Direction and Align Items</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/gBPmWj?editors=0100" target="_blank">
+            <img class="codepen" src="assets/flex-direction.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Wrap</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/oabZyp?editors=1100" target="_blank">
+            <img class="codepen" src="assets/wrap.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Grow</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/aRdJjw?editors=0100" target="_blank">
+            <img class="codepen" src="assets/grow.png" alt="">
+          </a>
+        </section>
+        <section>
+          <p>These examples are largely drawn from this fantastic write up on css-tricks</p>
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Background Images and Effects</h3>
+        </section>
+        <section>
+          <h4>Image</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/mzVmRZ?editors=1100" target="_blank">
+            <img class="codepen" src="assets/background-image.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Gif</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/EdPmwL?editors=1100" target="_blank">
+            <img class="codepen" src="assets/background-gif.png" alt="">
+          </a>
+        </section>
+        <section>
+          <p>A note on giphy for background gifs</p>
+        </section>
+        <section>
+          <img class="codepen" src="assets/giphy-1.png" alt="">
+        </section>
+        <section>
+          <img class="codepen" src="assets/giphy-2.png" alt="">
+        </section>
+        <section>
+          <img class="codepen" src="assets/giphy-3.png" alt="">
+        </section>
+        <section>
+          <h4>Gradients</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/zmrwLL?editors=1100" target="_blank">
+            <img class="codepen" src="assets/gradient.png" alt="">
+          </a>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Embedded content</h3>
+        </section>
+        <section>
+          <p>We're entering the wild west a bit here. Different sites embed content in different ways, so you might need to mess around a bit to get something you like.</p>
+          <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/129/face-with-cowboy-hat_1f920.png" alt=""/>
+        </section>
+        <section>
+          <h4>Youtube</h4>
+          <p>find a video you like, and look for the share option in the bottom left corner</p>
+          <img class='carbon' src="assets/youtube-1.png" alt=""/>
+        </section>
+        <section>
+          <img class='carbon' src="assets/youtube-2.png" alt=""/>
+        </section>
+        <section>
+          <p>Click the embed option from the share menu and copy the embed code.</p>
+          <img class='carbon' src="assets/youtube-3.png" alt=""/>
+        </section>
+        <section>
+          <a href="https://codepen.io/DexterShepherd/pen/BqjZEx" target="_blank">
+            <img class="codepen" src="assets/youtube.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Vimeo</h4>
+          <img class='carbon' src="assets/vimeo-1.png" alt=""/>
+        </section>
+        <section>
+          <p>The idea with most of these things is pretty similar. You look for the share button, then find the embed code to copy.</p>
+          <p>embed codes usually start with an <code>iframe</code> element</p>
+        </section>
+        <section>
+          <a href="https://codepen.io/DexterShepherd/pen/JmGydR?editors=1000" target="_blank">
+            <img class="codepen" src="assets/vimeo.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>SoundCloud</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/RerZax?editors=1000" target="_blank">
+            <img class="codepen" src="assets/soundcloud.png" alt="">
+          </a>
+        </section>
+        <section>
+          <p>
+            Embedding videos in in a way that works with different screen sizes is notoriously complicated. I'm of the opinion that a nice image that links to the video is often a better approach. If you absolutely need to embed something responsively, check out <a href="http://embedresponsively.com/" target="_blank">Embed Responsively</a>. They provide an alternate embed code that sometimes looks nicer.
+          </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Psuedo-selectors</h3>
+        </section>
+        <section>
+          <p>In addition to the tag/class/descendant selectors we looked at last week, css gives <code>psuedo-selectors</code>.</p>
+          <p>These allow us to select an element based on a few more complex rules.</p>
+        </section>
+        <section>
+          <p>There are many psuedo-selectors, most are specific to certain uses, but some of the more general ones are</p>
+          <ul>
+            <li><code>:first-child / :last-child</code></li>
+            <li><code>:first-of-type / :last-of-type</code></li>
+            <li><code>:hover</code></li>
+            <li><code>:active</code></li>
+          </ul>
+        </section>
+        <section>
+          <h4>first/last-child and first/last-of-type</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/xyZdNM?editors=1100" target="_blank">
+            <img class="codepen" src="assets/first-child.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>hover</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/gBPWVM" target="_blank">
+            <img class="codepen" src="assets/hover.png" alt="">
+          </a>
+        </section>
+        <section>
+          <h4>Active</h4>
+          <a href="https://codepen.io/DexterShepherd/pen/PyZjwb" target="_blank">
+            <img class="codepen" src="assets/active.png" alt="">
+          </a>
+        </section>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+  </script>
+</body>
+</html>
