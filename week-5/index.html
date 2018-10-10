@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../lib/reveal.css">
+  <link rel="stylesheet" href="../lib/theme/white.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='week-1' class="reveal">
+    <div class="slides">
+      <section>
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>Week 5 - No More Codepen!!!!</em></p>
+      </section>
+      <section>
+        <h3>Agenda</h3> 
+        <ul>
+          <li>Review</li>
+          <li>Installing a text editor</li>
+          <li><em>doctype, html, head, and body</em> tags</li>
+          <li>File Structure, links, and assets</li>
+          <li>devtools</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Ask me a question about the homework!</h3>
+        <p>or about something else.</p>
+      </section>
+      <section>
+        <section>
+          <h1>Text editors</h1>
+        </section>
+        <section>
+          <p>
+            Once we are out of codepen, we need a text editing 
+            program to write our code.
+          </p>
+        </section>
+        <section>
+          <p>
+          This program doesn't have to be anything fancy, anything that can write a <code>html</code> file will do, but things are much easier with a programming specific editor.
+          </p>
+        </section>
+        <section>
+          <h3>Atom</h3>
+          <a href="https://atom.io" target="_blank">
+            <img src="assets/atom-ui.png" alt=""/>
+          </a>
+        </section>
+        <section>
+          <p>Please download and install <strong>atom</strong>.</p>
+          <p>If you are more comfortable with another text editor feel free to use that. Some good options are <em>sublime text</em> and <em>vscode</em>.</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>The tags that codepen hides...</h3>
+        </section>
+        <section>
+<!DOCTYPE html>
+          <h3>Doctype</h3>
+          <img class="carbon" src="assets/doctype.png" alt="">
+        </section>
+        <section>
+          <p>Doctype is not a HTML tag. The doctype <em>declaration</em> is a special instruction to the browser specifying the version of HTML to use when rendering the page.</p>
+          <p>The doctype tag should never change and should <strong>always</strong> be the first line of your html document</p>
+        </section>
+        <section>
+          <h3>html</h3>
+          <img class="carbon" src="assets/html.png" alt="">
+        </section>
+        <section>
+          <p>The <code>html</code> element represents the root of element of your page. Every other element in your code is a child of the <code>html</code> element.</p>
+          <p>The <code>lang</code> specifies the langauge this documentis written in ( <code>en</code>  meaning english ) and the <code>dir</code> attribute specifies the text direction ( <code>ltr</code> stands ffor <em>left to right</em>)</p>
+        </section>
+        <section>
+          <h3>head</h3>
+          <img class="carbon" src="assets/head.png" alt="">
+        </section>
+        <section>
+          <p>The <code>head</code> tag all the non-visible content on your webpage. This is where we can load stylesheets, set the tab title and icon, and supply any metadata about our site ( more on that later ).</p>
+        </section>
+        <section>
+          <h3>body</h3>
+          <img class="carbon" src="assets/body.png" alt="">
+        </section>
+        <section>
+          <p>The <code>body</code> tag is where all of our visible content goes. Everything we have written in the HTML pane on codepen has been inserted into the body tag.</p>
+        </section>
+
+        <section>
+          <h3>Everything in context</h3>
+          <img class="carbon" src="assets/context.png" alt="">
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>File structure, links, and assets.</h3>
+        </section>
+        <section>
+          <h3>link</h3>
+          <img class="carbon" src="assets/link.png" alt="">
+        </section>
+        <section>
+          <p>We can link a stylesheet ( css file ) with a html document with the <code>link</code> tag. The link tag goes in the <strong>head</strong> of the html document</p>
+          <p>The <code>link</code> tag has 2 required attributes. <code>href</code> which specifies the path of the file to load, and <code>rel</code> which specifies the relationship between the loading document and the loaded document. In our case <code>rel</code> will always equal "stylesheet"</p>
+        </section>
+        <section>
+          <h3>Loading local images</h3>
+          <p>The moment we've all been waiting for...</p>
+        </section>
+        <section>
+          <img class="carbon" src="assets/img.png">
+          <p>We can load local images exactly like we loaded images in codepen. Only now, the <code>src</code> attribute of our <code>img</code> tag can point to files stored relative to the html file.</p>
+        </section>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+  </script>
+</body>
+</html>
