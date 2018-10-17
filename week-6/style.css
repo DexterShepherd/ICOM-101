@@ -1,0 +1,131 @@
+#welcome span {
+  display: inline-block;
+}
+
+img {
+  border: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: none !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex > img {
+  max-width: 50%;
+}
+
+img.emoji {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+p.left-align {
+  text-align: left;
+}
+
+cite {
+  float: right;
+}
+
+.key {
+  color: red;
+}
+
+.colon {
+  color: green;
+}
+
+.value {
+  color: blue;
+}
+
+.semi-colon {
+  color: orange;
+}
+
+.carbon {
+  width: 700px !important;
+  background: none !important;
+}
+
+.codepen {
+  padding: 16px !important;
+  border: 2px solid gray !important;
+  max-height: 550px !important;
+}
+
+.colors h1{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.white {
+  color: #fff;
+}
+
+.white a{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-text {
+  font-size: 2em;
+}
+
+.spaced {
+  margin-bottom: 64px !important;
+}
+
+.content p {
+  display: inline;
+  padding: 16px;
+  border: 2px dashed black;
+  border-radius: 8px;
+}
+
+.content .border {
+  display: inline;
+  padding: 16px;
+  border: 8px solid red;
+  border-radius: 8px;
+}
+
+.content .padding {
+  display: inline;
+  padding: 48px;
+  border: 2px solid red;
+  border-radius: 8px;
+  background-color: darkturquoise;
+}
+
+.content .margin {
+  display: inline-block;
+  padding: 32px;
+  border: 2px solid red;
+  border-radius: 8px;
+  background-color: darkturquoise;
+}
+
+.padding.small {
+  padding: 16px !important;
+}
+
+.padding.med {
+  padding: 32px !important;
+}
+
+p.margin.small {
+  margin: 56px !important;
+}
+
+.red {
+  color: red;
+}
+
+.aqua {
+  color: darkturquoise;
+}

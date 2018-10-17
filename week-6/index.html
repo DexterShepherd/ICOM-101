@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../lib/reveal.css">
+  <link rel="stylesheet" href="../lib/theme/white.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id='week-1' class="reveal">
+    <div class="slides">
+      <section>
+        <h1 id='welcome'>Welcome!</h1>
+        <h3>Media and Web Development</h3>
+        <p><em>Week 6 - Deployment</em></p>
+      </section>
+      <section>
+        <img class='carbon' src="assets/ok.png">
+      </section>
+      <section>
+        <h3>Agenda</h3> 
+        <ul>
+          <li>Review</li>
+          <li>Hosting with Github pages</li>
+        </ul>
+      </section>
+      <section>
+        <section>
+          <h3>Working with Github</h3>
+        </section>
+        <section>
+          <p>The deployment part of this process is often a bit of a headache.</p>
+          <p><em>Github Pages</em> and <em>Google Domains</em> is my preferred method of doing this, but if it's not your cup of tea feel free to research other hosting and domain options. There are many out there.</p>
+        </section>
+        <section>
+          <h3>What is github</h3>
+        </section>
+        <section>
+          <p>
+          Git is a versioning system for keeping track of source code ( and many other things ).
+          We create git <em>repositiories</em> on our computer and track changes to our code locally.
+          </p>
+          <p>
+            Github is a commerical platform that hosts git repositiories in the cloud. 
+            Github is primarily used as a collaboration tool, allowing many developers to share access to a single codebase.
+          </p>
+        </section>
+        <section>
+          <p>
+            Although Git and Github are hugely useful tools in software development, we won't be going into great depth with them. 
+            Our focus is using the <em>pages</em> service of github to host our websites.
+          </p>
+        </section>
+        <section>
+          <h3>Go to <a href="https://www.github.com" target="_blank">github.com</a> and create your account.</h3>
+          <p>If you already have one you can skip this, just go sign in.</p>
+        </section>
+        <section>
+          <h5>Then go to <a href="https://desktop.github.com/" target="_blank">desktop.github.com</a> and download the desktop client for your OS.</h5> 
+          <p>
+            Git can be used via the command line (terminal) or from the desktop gui.
+            If you prefer command line that's fine, but if you're new to this stuff the desktop client is probably the best bet.
+          </p>
+        </section>
+        <section>
+          <p>From the github UI, make a new repositiory on your computer.</p>
+          <img class='carbon' src="assets/gh-1.png">
+        </section>
+        <section>
+          <p>Name your repo whatever you want, and save it to the same directory you've been using for this course.</p>
+          <img class='carbon' src="assets/gh-2.png"></img>
+        </section>
+        <section>
+          <p>
+            Copy <strong>all</strong> the code and assets from last weeks assignment into your new repo.
+            The two folders should now be identical.
+          </p>
+          <img class='carbon' src="assets/gh-3.png"></img>
+        </section>
+        <section>
+          <p>
+            Once your code is copied over, you should see it reflected in the Github Desktop app.
+            If you don't, you're copying code to the wrong place.
+          </p>
+          <img class='carbon' src="assets/gh-4.png"></img>
+        </section>
+        <section>
+          <p>
+            Add a message to the <strong>summary</strong> field and hit <strong>commit</strong>.
+          </p>
+          <img class='carbon' src="assets/gh-5.png"></img>
+        </section>
+        <section>
+          <p>All your code will disapear from the app. <strong>This is a good thing</strong>. The code you see in the app represents the <em>changes</em> to your code since your last <em>commit</em>. We've just commited, so none of your code has changed since last commit.</p>
+        </section>
+        <section>
+          <p>
+            Now that you're code is committed, hit the "Publsh Repository" button to send your code to Github.
+          </p>
+          <img class='carbon' src="assets/gh-6.png"></img>
+        </section>
+        <section>
+          <p>
+            Navigate to <a href="https://www.github.com" target="_blank">github</a> in your browser,
+            and open the repository you just created.
+          </p>
+          <img class='carbon' src="assets/gh-7.png"></img>
+        </section>
+        <section>
+          <p>
+            Open the repository settings and scroll down to the Github Pages section. 
+            Select <strong>master</strong> from the <em>source</em> dropdown and hit <strong>save</strong>.
+          </p>
+          <img class='carbon' src="assets/gh-8.png"></img>
+        </section>
+        <section>
+          <p>Wait a minute or so and refresh the settings page. You should see a green link above the Github Pages section.</p>
+          <img class='carbon' src="assets/gh-9.png"></img>
+        </section>
+        <section>
+          <h3>Congratulations! You have deployed a website.</h3>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Custom domains</h3>
+        </section>
+        <section>
+          <p>I'm going to be using Google Domains for this class. You can use something else if you wish, but you might need to do some documentation digging to work out how to define the records we need.</p>
+        </section>
+        <section>
+          <p>Head over to <a href="https://domains.google.com" target="_blank">domains.google.com</a></p>
+          <img class='carbon' src="assets/domains-1.png"></img>
+        </section>
+        <section>
+          <p>
+            Click the <em>Find a Domain</em> button, and have a look for the domain you want.
+          </p>
+          <img class='carbon' src="assets/domains-2.png"></img>
+        </section>
+        <section>
+          <p> Once you've found your domain, add it to your cart and go through the billing flow.</p>
+          <img class='carbon' src="assets/domains-3.png"></img>
+        </section>
+        <section>
+          <p>Now that you've purchased your domain, go back to your code and create a new file named <em>CNAME</em></p>
+          <p>All caps, no extension.</p>
+          <img class='carbon' src="assets/domains-5.png"></img>
+        </section>
+        <section>
+          <p>Your <em>CNAME</em> file should look like this, but with your chosen domain.</p>
+          <img class='carbon' src="assets/domains-6.png"></img>
+        </section>
+        <section>
+          <p>Once you have added your CNAME file, go back to the Github Desktop app, and commit your changes.</p>
+          <img class='carbon' src="assets/domains-7.png"></img>
+        </section>
+        <section>
+          <p>After commiting, click the <em>Push to Origin</em> button in the top right to push your new code to Github.</p>
+          <img class='carbon' src="assets/domains-8.png"></img>
+        </section>
+        <section>
+          <p>If you look at your repo settings, we can see that github has read our CNAME file and is asking us to set some stuff up on the Google Domains side.</p>
+          <img class='carbon' src="assets/domains-9.png"></img>
+        </section>
+        <section>
+          <p>Back on google domains, navigate to the DNS tab of your domain name.</p>
+          <img class='carbon' src="assets/domains-10.png"></img>
+        </section>
+        <section>
+          <p>At the bottom of the page, add 2 custom resource records to your domain.</p>
+          <p>The first should be <em>A</em> type record with the name <em>@</em>.</p>
+          <p>The data field needs to be given these 4 IP addresses.</p>
+          <ul>
+            <li>185.199.108.153</li>
+            <li>185.199.109.153</li>
+            <li>185.199.110.153</li>
+            <li>185.199.111.153</li>
+          </ul>
+        </section>
+        <section>
+          <p>The second resource is a CNAME type resource with name <em>www</em> and data <em>your-github-username.github.io.</em></p> 
+        </section>
+        <section>
+          <p>If you are having trouble, use mine as a reference.</p>
+          <img class='carbon' src="assets/domains-10.png"></img>
+        </section>
+        <section>
+          <p>Once that is all saved you should be good to go. Unfortunately, DNS changes can take up to 48 hours to propagate so be patient.</p>
+          <img class='carbon' src="assets/domains-11.png"></img>
+        </section>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="../lib/reveal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
